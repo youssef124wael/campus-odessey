@@ -18,7 +18,7 @@ function Hero(props) {
 
 
     return (
-        <div id='hero' ref={ref} className='relative w-full min-h-screen justify-center items-center flex bg-no-repeat bg-fixed bg-cover bg-center'
+        <div id='hero' ref={ref} className='relative z-[0] w-full min-h-screen justify-center items-center flex bg-no-repeat bg-fixed bg-cover bg-center'
             style={{ backgroundImage: `url(${hero_image})` }}>
             <div className="absolute inset-0 bg-black opacity-60"></div>
             <div
@@ -26,10 +26,9 @@ function Hero(props) {
                 transition-all duration-[2000ms] ease-out
                 ${show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[1000px]'}`}
             >
-                <h1 className='text-[100px] max-md:text-[50px] text-[#E0E0E0]'>رحلتك للجامعة <span className='text-[#3E7CFF] max-md:text-[50px] text-[100px]'>بتبدأ من هنا</span></h1>
+                <h1 className='text-[70px] max-md:text-[50px] text-[#E0E0E0]'>رحلتك للجامعة <span className='text-[#3E7CFF] max-md:text-[50px] text-[70px]'>بتبدأ من هنا</span></h1>
                 <p className='text-[30px] text-[#E0E0E0]'>
-                    Navigate the college application journey with confidence. Explore our <span className='text-[#B4A476]'>expert resources</span><br />
-                    and <span className='text-[#B4A476]'>personalized guidance</span> to help you reach your academic goals.
+                    قدم للجامعة وانت مطمن! استفيد من مصادرنا وإرشاداتنا المخصصة الي بتساعدك توصل لأهدافك الأكاديمية.
                 </p>
                 <div className='flex gap-10'>   
                     <a href='#contact' className=' text-white flex items-center rounded justify-center w-[150px] h-[50px] bg-[#3E7CFF] transition transform hover:scale-110 hover:brightness-110 '>Contact Us</a>
