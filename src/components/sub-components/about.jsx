@@ -16,7 +16,7 @@ function About(props) {
     }, [inView,props]);
 
     return (
-        <div id='about' ref={ref} className="w-full max-w-7xl 2xl:w-[70%] mx-auto py-[200px] text-[#E0E0E0] space-y-16 px-4">
+        <div id='about' ref={ref} className="w-full mx-auto py-[200px] text-[#E0E0E0] space-y-16 ">
             <h1 className='text-center text-[100px] py-5 font-bold'>نبذة عنا</h1>
             {/* Row 1 */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center min-h-[350px]">
