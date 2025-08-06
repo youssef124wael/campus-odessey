@@ -3,16 +3,18 @@ import '../../index.css'
 import Container from '../../layout/ContainerLayout'
 function Navbar(props) {
     return (
-        <nav className='sticky top-0 z-[10] bg-black'>
+        <nav className='sticky top-0 z-[100] bg-black'>
             <Container>
                 <div className="flex items-center justify-between">
-                <div className="font-semibold text-[24px]">
-                    Campus <br /> Odyssey
-                </div>
-                    <div className="flex gap-[30px] text-[18px]">
-                        <a href='#hero' className={` ${props.activeSection === 'hero' ? 'text-[#3E7CFF]' : ''}`}>Home</a>
-                        <a href='#about' className={` ${props.activeSection === 'about' ? 'text-[#3E7CFF]' : ''}`}>About</a>
-                        <a href='#contact' className='flex max-md:w-[100px] items-center max-md:text-[16px] rounded justify-center w-[131px] h-[35px] bg-[#3E7CFF] transition transform hover:scale-110 hover:brightness-110 '>Contact Us</a>
+                    <div className="flex flex-row-reverse gap-[30px] text-[18px]">
+                        <a href='#hero' className={` ${props.activeSection === 'hero' ? 'text-[#3E7CFF]' : ''}`}>الرئيسية</a>
+                        <a href='#about' className={` ${props.activeSection === 'about' ? 'text-[#3E7CFF]' : ''}`}>نبذه عنا</a>
+                        <a href='#programs' className={` ${props.activeSection === 'about' ? 'text-[#3E7CFF]' : ''}`}>بروجرامز</a>
+                        <a href='#admission' className={` ${props.activeSection === 'about' ? 'text-[#3E7CFF]' : ''}`}>ادمشن</a>
+                        <a href='#competitions' className={` ${props.activeSection === 'about' ? 'text-[#3E7CFF]' : ''}`}>مسابقات</a>
+                    </div>
+                    <div className="font-semibold text-[24px]">
+                        Campus <br /> <span className='text-blue-700'>Odyssey</span>
                     </div>
                 </div>
             </Container>
