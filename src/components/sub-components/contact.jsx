@@ -1,9 +1,19 @@
 import React from "react";
 import ContainerLayout from "../../layout/ContainerLayout";
-const Contact = () => {
+import { useEffect} from "react";
+import { useInView } from 'react-intersection-observer'; 
+const Contact = (props) => {
+  const { ref, inView } = useInView({threshold: 0.5},);
+  useEffect(() => {
+      console.log("inView?", inView);
+      if (inView) {
+          console.log('contact section is in view');
+          props.handler('contact');
+      }
+  }, [inView,props]);
   return (
     <>
-      <section className="relative z-10 overflow-hidden bg-black py-20 dark:bg-dark lg:py-[120px]">
+      <section ref={ref} id="contact" className="relative z-10 overflow-hidden bg-black py-20 dark:bg-dark lg:py-[120px]">
         <ContainerLayout>
         <div className="container">
           <div className="-mx-4 flex flex-wrap flex-row-reverse lg:justify-between">

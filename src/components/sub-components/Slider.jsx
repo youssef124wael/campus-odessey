@@ -14,13 +14,13 @@ export default function Slider(props) {
     return (
         <div className="w-full flex justify-center items-center h-[200px] max-md:h-[100px] bg-blue-700">
             <ContainerLayout>
-                <div className="flex justify-center gap-4 md:gap-4">
+                <div className="flex justify-center sm:gap-4 md:gap-4">
                     {allImages.map((src, index) => (
                         <img
                             key={index}
                             src={src}
                             alt={`slide-${index}`}
-                            className="w-[200px] h-[60px] max-lg:w-[80px] max-md:h-[30px]"
+                            className="w-[200px] h-[60px] max-lg:w-[80px] max-md:w-[50px] max-md:h-[30px]"
                             draggable={false}
                         />
                     ))}

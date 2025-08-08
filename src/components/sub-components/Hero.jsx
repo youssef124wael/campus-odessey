@@ -31,8 +31,8 @@ function Hero(props) {
                     قدم للجامعة وانت مطمن! استفيد من مصادرنا وإرشاداتنا المخصصة الي بتساعدك توصل لأهدافك الأكاديمية.
                 </p>
                 <div className='flex gap-10'>   
-                    <a href='#contact' className=' text-white flex items-center rounded justify-center w-[150px] h-[50px] bg-[#3E7CFF] transition transform hover:scale-110 hover:brightness-110 '>Contact Us</a>
-                    <a href='#contact' className='text-white flex items-center justify-center w-[150px] h-[50px] border border-white rounded-lg px-6 py-3 bg-transparent transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#3E7CFF] hover:to-[#B4A476] hover:scale-110 hover:brightness-110"'>Contact Us</a>
+                    <a href='#contact' className=' text-white flex items-center rounded justify-center w-[150px] h-[50px] bg-[#3E7CFF] transition transform hover:scale-110 hover:brightness-110 '>تواصل معنا</a>
+                    <a href='#contact' className='text-white flex items-center justify-center w-[150px] h-[50px] border border-white rounded-lg px-6 py-3 bg-transparent transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#3E7CFF] hover:to-[#B4A476] hover:scale-110 hover:brightness-110"'>اعرف اكتر</a>
                 </div>
             </div>
         </div>

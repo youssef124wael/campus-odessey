@@ -7,13 +7,14 @@ import { useInView } from 'react-intersection-observer';
 import {motion} from 'framer-motion';
 import ContainerLayout from '../../layout/ContainerLayout';
 function About(props) {
-    const { ref, inView } = useInView({threshold: 0.1},);
+    const { ref, inView } = useInView({threshold: 0.5},);
     useEffect(() => {
         console.log("inView?", inView);
         if (inView) {
             console.log('About section is in view');
             props.handler('about');
         }
+        
     }, [inView,props]);
 
     return (
