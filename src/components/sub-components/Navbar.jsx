@@ -21,18 +21,15 @@ function useIsMobile() {
 function Navbar(props) {
   const isMobile = useIsMobile();
   const [menuOpen, setMenuOpen] = useState(false);
-  const heightIsmobile = isMobile ? 250 : 0
   const navLinks = (
-    <motion.div className={`flex ${isMobile ? 'flex-col gap-4 p-4 bg-black text-white' : 'flex-row-reverse items-center gap-[30px] text-[18px]'}`}
-    initial={{height:0}}
-    animate={{height:heightIsmobile}}
+    <div className={`flex ${isMobile ? 'flex-col gap-4 p-4 bg-black text-white' : 'flex-row-reverse items-center gap-[30px] text-[18px]'}`}
     >
       <motion.a initial={{opacity:0}} animate={{opacity:1}} href="#hero" onClick={() => setMenuOpen(false)} className={`${~isMobile && props.activeSection === 'hero' ? 'text-[#3E7CFF]' : ''}`}>الرئيسية</motion.a>
       <motion.a initial={{opacity:0}} animate={{opacity:1}} href="#about" onClick={() => setMenuOpen(false)} className={`${~isMobile && props.activeSection === 'about' ? 'text-[#3E7CFF]' : ''}`}>نبذه عنا</motion.a>
       <motion.a initial={{opacity:0}} animate={{opacity:1}} href="#programs" onClick={() => setMenuOpen(false)} className={`${~isMobile && props.activeSection === 'programs' ? 'text-[#3E7CFF]' : ''}`}>بروجرامز</motion.a>
       <motion.a initial={{opacity:0}} animate={{opacity:1}} href="#admission" onClick={() => setMenuOpen(false)} className={`${~isMobile && props.activeSection === 'admission' ? 'text-[#3E7CFF]' : ''}`}>ادمشن</motion.a>
       <motion.a initial={{opacity:0}} animate={{opacity:1}} href="#competitions" onClick={() => setMenuOpen(false)} className={`${~isMobile && props.activeSection === 'competitions' ? 'text-[#3E7CFF]' : ''}`}>مسابقات</motion.a>
-    </motion.div>
+    </div>
   );
 
   return (
